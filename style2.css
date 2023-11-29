@@ -1,0 +1,80 @@
+
+/* Set the background image and apply a blur effect */
+body{
+    background-image: url(instruction5.jpg);
+    /* background-repeat: no-repeat; */
+    background-position: cover;
+    backdrop-filter: blur(5px);
+}
+
+/* Center-align text with a large font size */
+.text-center{
+    color: bisque;
+    font-size: 60px;
+}
+
+/* Style for level-3 headings (h3) */
+h3{
+    display: inline-block;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/* Style for images with fluid dimensions */
+.img-fluid{
+    height: 500px;
+    width: 500px;
+    box-shadow: 3px 3px red, -1em 0 .4em olive;
+    margin-left: 40px;
+}
+
+/* Create a flex container for arranging elements */
+.container-box{
+    display: flex;
+    justify-content:space-between;
+}
+
+/* Style for the main content area */
+.main{
+    margin-top: 8px;
+}
+
+/* Style for paragraphs with a green color and fixed height with scroll if needed */
+p{
+    color: rgb(85, 255, 0);
+    font-size: 20px;
+    font-weight: 600;
+    overflow-y: auto;
+    height: 500px;
+}
+
+
+/* Media query for screens with a minimum width of 768px */
+@media (min-width: 768px) {
+    /* Make images responsive within their parent container */
+    .img-fluid{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+/* Media query for screens with a minimum width of 425px */
+@media (min-width: 425px) {
+    /* Make images responsive within their parent container */
+    .img-fluid{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    /* Change the layout to a column-based arrangement */
+    .container-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /* Adjust the font size for h3 elements */
+    h3{
+        font-size: 50px;
+        font-size: 30px;
+    }
+}

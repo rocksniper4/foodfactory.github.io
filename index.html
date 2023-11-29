@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Factory</title>
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background image -->
+    <img src="food4.jpg" alt="" class="bg">
+
+    <!-- Container for content -->
+    <div class="container mt-5 background">
+        <!-- Heading -->
+        <div class="heading"><h1 class="text-center">FOOD FACTORY</h1></div>
+
+        <!-- Text elements -->
+        <p class="text1">Are you feeling <p class="text2">Hungry?</p></p>
+        <p class="text3">"Search Meal near by you"</p>
+
+        <!-- Row containing two columns -->
+        <div class="row mt-4">
+            <!-- Left column for searching meals -->
+            <div class="col-md-6 search-meal">
+                <h2 class="one">Search for Meals</h2>
+                <input type="text" id="search-input" class="form-control" placeholder="Search for a meal...">
+                <option value="" selected="selected">Choose items from suggestions...</option>
+                <div id="suggestions"></div>
+            </div>
+
+            <!-- Right column for favorite meals -->
+            <div class="col-md-6">
+                <h2 class="two">My Favorite Meals</h2>
+                <div class="favorites-list-container">
+                    <ul id="favorites-list" class="list-group">
+                        <!-- Favorite meals will be added here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>

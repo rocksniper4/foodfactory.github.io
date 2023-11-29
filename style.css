@@ -1,0 +1,238 @@
+/* Global styles for the entire page */
+body {
+
+    font-family: cursive;
+}
+
+/* Background image styling */
+.bg {
+    /* width: 100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(food4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Styling for the main heading */
+.text-center {
+    color: rgb(177, 154, 254);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    border-radius: 20px;
+    margin-left: -200px;
+    width: 90%;
+    height: 60px;
+    padding-top: 6px;
+    background-color: #0000007d;
+}
+
+/* Styling for the text elements */
+p {
+    font-size: 40px;
+    animation: typeIn 2s steps(28) forwards;
+}
+
+.text1 {
+    width: 300px;
+    margin-left: -180px;
+    color: #ffffff;
+}
+
+.text2 {
+    margin-left: 50px;
+    color: #95ff00;
+}
+
+.text3 {
+    color: #ffffff;
+}
+
+/* Styling for the search-meal section */
+.search-meal {
+    margin-left: -175px;
+}
+
+/* Styling for headings */
+h2 {
+    text-align: center;
+    font-weight: 800;
+    border-radius: 20px;
+    width: 65%;
+}
+
+/* Styling for specific headings with class "one" and "two" */
+.one {
+    color: #95ff00;
+    font-style: italic;
+}
+
+.two {
+    color: #95ff00;
+    font-style: italic;
+}
+
+/* Styling for the search input field */
+.form-control {
+    height: 55px;
+    width: 350px;
+    box-shadow: inset 12px 12px 20px #7d7c7c, inset -15px -15px 20px #ffffff;
+    line-height: 100px;
+    border-radius: 20px;
+}
+
+.form-control:hover {
+    box-shadow: inset -15px -15px 20px #7d7c7c, inset 15px 15px 20px #ffffff;
+}
+
+/* Styling for the suggestions box */
+#suggestions {
+    height: 100%;
+    color: rgb(25, 126, 249);
+    max-height: 220px;
+    overflow: auto;
+    scroll-margin: 2px;
+}
+
+/* Styling for options */
+option {
+    color: #7d7c7c;
+}
+
+/* Styling for the favorites list */
+.favorites-list {
+    padding: 5px;
+    margin-left: 0;
+    margin-top: 5px;
+    border-radius: 20px;
+    overflow-y: auto;
+}
+
+/* Styling for list items */
+li {
+    border-radius: 20px;
+    margin-top: 5px;
+    width: 350px;
+}
+
+/* Styling for suggestion items */
+.suggestion-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Styling for the favorites list container */
+.favorites-list-container {
+    max-height: 300px;
+    overflow: auto;
+}
+
+
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .bg {
+        background-size: cover;
+    }
+    .heading {
+        width: 100%;
+        margin-left: 200px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .text1 {
+        margin-top: 10px;
+        margin-left: 8px;
+        font-size: 20px;
+
+    }
+
+    .text2 {
+        margin-left: 25%;
+        font-size: 30px;
+    }
+
+    .text3 {
+        margin-left: -15px;
+        font-size: 20px;
+    }
+
+    .search-meal {
+        text-align: left;
+        /* Align search to the left on smaller screens */
+    }
+
+    h2 {
+        /* max-width: 100%; */
+        /* Remove the maximum width for h2 on smaller screens */
+        font-size: 20px;
+    }
+
+    .one {
+        margin-left: 50%;
+    }
+
+    .two {
+        margin-left: 30%;
+    }
+
+    .form-control {
+        max-width: 70%;
+        /* Remove the maximum width for the input on smaller screens */
+        margin-left: 50%;
+    }
+
+    option {
+        margin-left: 50%;
+    }
+
+    #suggestions {
+        max-height: 80px;
+    }
+
+    .suggestion-item {
+        margin-left: 60%;
+        font-size: 12px;
+    }
+    
+    .fav {
+        max-width: 80%;
+        max-height: 17px;
+        font-size: 8px;
+    }
+
+    .favorites-list-container {
+        margin-left: 30%;
+        max-height: 130px;
+    }
+
+    .favorites-list {
+        max-height: none;
+    }
+
+    .list-group-item {
+        max-width: 90%;
+        max-height: 30px;
+        font-size: 8px;
+    }
+
+    .remove {
+        font-size: 8px;
+        max-width: 60px;
+        max-height: 20px;
+    }
+
+}
+
+
+
+
+
